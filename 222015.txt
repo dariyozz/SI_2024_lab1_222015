@@ -1,0 +1,149 @@
+
+4. cd ~/OneDrive/Desktop/faks/SoftverskoInzinjerstvo/SI_2024_lab1_222015
+   git init
+
+	So komandata "cd" vleguvame vo folderot koj go kreiravme pa so "git init" go inicijalizirame.
+
+-------------------------------------------------------------------------
+
+5. git remote add origin https://github.com/dariyozz/SI_2024_lab1_222015.git
+	
+	So ovaa komanda go povrzuvame nasheto lokalno repo so remote repoto na github 
+	vo ovaj slucaj so HTTPS(moze i SSH).
+
+--------------------------------------------------------------------------
+
+6. touch README.md
+   nano README.md (otvorame text editor,pa pisuvame ime prezime indeks)
+   git add . ili samo git add README.md (go stavame failot vo staged)
+   git commit -m "Initial commit" (pravime commit)
+
+---------------------------------------------------------------------------
+
+7. gi spustame failvoite i gi staveme vo nashiot lokalen folder
+   git add . (gi stavame vo staged site fajlovi)
+   git commit -m "Add starter code." (pravime commit)
+
+---------------------------------------------------------------------------  
+
+8. git push origin master 
+   
+   So ovaa komanda gi prefrlame site nashi commiti na nasheto remote repo 
+
+---------------------------------------------------------------------------
+
+9. git branch bug1
+   git branch bug2
+
+   So ovie komandi gi kreirame dvete granki no ostanuvame na master ne pravime checkout 
+
+-----------------------------------------------------------------------------
+
+10. git checkout bug1 (Se prefrlame na grankata bug1)
+
+-----------------------------------------------------------------------------
+
+11. Ja popravame greskata namesto el.lenght % 2 == 0 go smenuvame vo != 
+	git add . (go stavame vo staged modificiraniot fajl)
+    git commit -m "Fix wrong condition in filterOddLengthStrings." 
+
+-------------------------------------------------------------------------------
+
+12. git checkout bug2 (Se prefrlame na grankata bug2)
+
+-----------------------------------------------------------------------------
+
+13. Ja popravame greskata namesto > vo <
+	git add . (go stavame vo staged modificiraniot fajl)
+    git commit -m "Fix wrong condition in makeBigStringFrom." 
+
+-------------------------------------------------------------------------------
+
+14. git checkout bug1 (se vrakjame na bug1 grankata)
+
+-------------------------------------------------------------------------------
+
+15. Go dodavame metodot System.out.println(SILab1_1.filterOddLengthStrings(list));
+	git add . 
+	git commit -m "Call method filterOddLengthStrings in main class"
+
+-------------------------------------------------------------------------------
+
+16. git checkout bug2 (se vrakjame na bug2 grankata)
+
+-------------------------------------------------------------------------------
+
+17.Go dodavame metodot System.out.println(SILab1_2.makeBigStringFrom(list)); 
+	git add . 
+	git commit -m "Call method makeBigStringFrom in main class." 
+
+-------------------------------------------------------------------------------
+
+18. git pull origin master (pravime pull na remote repoto)
+
+-------------------------------------------------------------------------------
+
+19. git checkout master (se prefrlame na master grankata)
+
+-------------------------------------------------------------------------------
+
+20. git merge bug1 
+	
+	Ja spojuvame grankata bug1 kon master so strategija fast-forward taka sto ne 
+	se pravi dopolnitelen commit a i nema konflikti
+
+-------------------------------------------------------------------------------
+
+21. git pull origin master (pravime pull od remoto repoto)
+
+-------------------------------------------------------------------------------
+
+22. git checkout bug2 (se prefrlame na bug2 grankata)
+
+-------------------------------------------------------------------------------
+
+23. git rebase master 
+	
+	Probuvame da napravime rebase no se javuva konflikt vo fajlot S1LabMain.java
+	Konflikto moze da go razresime ako prifatime edna od metodite (metodot od seniorot ili zeni sekogash vo pravo :) )
+
+	git reset HEAD^ (go resetirame poslediot commit)
+	nano S1LabMain.java (vlagame vo faijlot i razresuvame konfikt i brisime crti ">>")
+	git add . (pravime stage sega na motificiraniot fajl)
+	git commit -m "Accept filter method"  (pravime commit)
+	git rebase --continue (od koga ce go rezresume konfliktot moze slobodno da prodolzime  so rebase)
+
+-------------------------------------------------------------------------------
+
+24. git checkout master
+
+-------------------------------------------------------------------------------
+
+25. git merge bug2
+
+	Spojuvanjeto ce bide fast-forward i nema da ima konflikti 
+
+-------------------------------------------------------------------------------
+
+26. git pull origin master (na sekoja granka posebno treba da se prefrla)
+-------------------------------------------------------------------------------
+
+27. nemase potreba od --force kaj bug2)
+
+-------------------------------------------------------------------------------
+
+28. touch logs.txt 
+	git logs --oneline (gi prikazuva logovite skrateno,od tuka gi kopiram)
+	nano logs.txt (otvoram editor i gi pastiram)
+	touch 222015.txt 
+
+-------------------------------------------------------------------------------
+
+29.     git add .
+	git commit -m "Final commit"
+	git pull origin master
+	git push origin master
+
+-------------------------------------------------------------------------------
+
+30. 

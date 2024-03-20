@@ -1,0 +1,5 @@
+64e245b (HEAD -> master, origin/master, bug2) Accept filter method
+414ca42 (bug1) Call method filterOddLengthStrings in main class
+37bf2d2 Fix wrong condition in filterOddLenghtStrings
+23fe763 Add starter code.
+0f9f0f7 Inital commit
