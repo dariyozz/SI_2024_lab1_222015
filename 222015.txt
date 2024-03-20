@@ -1,4 +1,8 @@
 
+1-2-3 nema nesto za objasnuvanje
+
+-------------------------------------------------------------------------------
+
 4. cd ~/OneDrive/Desktop/faks/SoftverskoInzinjerstvo/SI_2024_lab1_222015
    git init
 
@@ -139,11 +143,34 @@
 
 -------------------------------------------------------------------------------
 
-29.     git add .
+29. git add .
 	git commit -m "Final commit"
 	git pull origin master
 	git push origin master
 
 -------------------------------------------------------------------------------
 
-30. 
+30. pravime fork
+
+-------------------------------------------------------------------------------
+
+31. git clone https://github.com/dariyozz/SI_2024.git
+
+	so ovaa komanda go klonirame remote repoto na nashiot lokalen kompjuter
+
+	git remote add origin https://github.com/dariyozz/SI_2024.git
+
+	so ova go povrzuvame remote repoto so local repo
+-------------------------------------------------------------------------------
+
+32. touch 222015.txt
+	nano 222015 (vnesuvame nase ime)
+
+-------------------------------------------------------------------------------
+
+33. git pull origin master
+	git push origin master
+
+-------------------------------------------------------------------------------
+
+34-35. napraveno preku github
